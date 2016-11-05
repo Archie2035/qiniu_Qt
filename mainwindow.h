@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "aqiniuapi.h"
 #include "asettingwidget.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -24,6 +25,7 @@ private:
     QString m_localFilePath;
     QString m_remotePicUrl;
     ASettingWidget *settingObject;
+
     void showFilePreview(void);
     void setClipboardText(QString data);
     void autoDup();

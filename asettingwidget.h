@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "ui_asettingwidget.h"
+#include "agettheprojectdescribe.h"
 class ASettingWidget : public QWidget,Ui::ASettingWidget
 {
     Q_OBJECT
@@ -22,6 +23,7 @@ public:
     bool getIfStayOnTop();
     bool getIfAutoDup();
     bool getIfCopyMDUrl();
+    AGetTheProjectDescribe *theProjectDescribe;
 protected:
     void showEvent(QShowEvent *event);
 

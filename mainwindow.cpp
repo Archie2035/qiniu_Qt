@@ -7,6 +7,7 @@
 #include <QMimeData>
 #include <QFileIconProvider>
 #include <QClipboard>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -36,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete settingObject;
 }
 void MainWindow::closeEvent(QCloseEvent *event)
 {

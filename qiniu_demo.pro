@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     aqiniuapi.cpp \
-    asettingwidget.cpp
+    asettingwidget.cpp \
+    agettheprojectdescribe.cpp
 
 HEADERS  += mainwindow.h \
     aqiniuapi.h \
-    asettingwidget.h
+    asettingwidget.h \
+    agettheprojectdescribe.h
 
 FORMS    += mainwindow.ui \
     asettingwidget.ui

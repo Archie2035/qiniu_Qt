@@ -6,11 +6,17 @@ ASettingWidget::ASettingWidget(QWidget *parent) :
 {
     this->setupUi(this);
     updateSetting();
+    theProjectDescribe = new AGetTheProjectDescribe();
+    theProjectDescribe->getAboutContent();
+    connect(theProjectDescribe,&AGetTheProjectDescribe::sig_aboutContent,[=](QByteArray data){
+        if(!data.isEmpty())
+            textBrowserAbout->setText(QString(data));
+    });
 }
 
 ASettingWidget::~ASettingWidget()
 {
-
+    delete theProjectDescribe;
 }
 void ASettingWidget::showEvent(QShowEvent *event)
 {
