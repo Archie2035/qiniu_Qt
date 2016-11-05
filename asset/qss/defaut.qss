@@ -1,0 +1,7 @@
+QPushButton#pushButtonSetting{
+    background: transparent;
+    background-image: url(:/pic/asset/pic/setting_16.png);
+    background-position: center center;
+    background-repeat: none;
+    border:none;
+}

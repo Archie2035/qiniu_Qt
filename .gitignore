@@ -35,4 +35,5 @@ Makefile*
 
 # QtCtreator CMake
 CMakeLists.txt.user
-
+# nodejs
+node_modules/

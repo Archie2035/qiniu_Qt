@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>asset/pic/logo.png</file>
+        <file>asset/pic/setting_16.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>asset/qss/defaut.qss</file>
+    </qresource>
+</RCC>
