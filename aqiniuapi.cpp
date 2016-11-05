@@ -21,6 +21,6 @@ void AQiniuApi::upload(QString path)
     m_fileKey = QString("%1%2.%3").arg(QDateTime::currentDateTime().toTime_t())
             .arg(fileInfo.baseName())
             .arg(fileInfo.suffix());
-    QString cmd = QString("node ./qiniujs/upload.js %1 %2").arg(path).arg(m_fileKey);
+    QString cmd = QString("./qiniujs/node ./qiniujs/upload.js %1|%2").arg(path).arg(m_fileKey);
     m_nodejsProcess->start(cmd);
 }

@@ -25,7 +25,7 @@ ui_*.h
 *.Debug
 *.Release
 /debug
-
+/release
 Makefile*
 *build-*
 

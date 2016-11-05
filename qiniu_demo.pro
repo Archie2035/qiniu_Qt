@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = qiniu_Qt
 TEMPLATE = app
-
+RC_FILE = res.rc
 
 SOURCES += main.cpp\
         mainwindow.cpp \
