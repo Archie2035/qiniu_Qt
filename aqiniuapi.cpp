@@ -7,7 +7,6 @@ AQiniuApi::AQiniuApi(QObject *parent) : QObject(parent)
     m_nodejsProcess = new QProcess(this);
     connect(m_nodejsProcess,&QProcess::readyRead,[=]{
         QByteArray data = m_nodejsProcess->readAll();
-        qDebug()<<data;
         if(data.contains("success")){
             emit sig_uploadResult(true,m_fileKey);
         }else{
