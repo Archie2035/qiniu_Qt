@@ -68,3 +68,6 @@ linux版是一个tar包。解压后运行 `CsensorsPicBed.sh`。
 1. 自动复制链接
 2. 置顶
 3. 上传后的文件名自动加时间戳，去七牛网站上容易检索
+## build 
+1. 解压qiniujs/node_modules.zip 到qiniujs目录，这是nodejs的库
+2. 构建即可
